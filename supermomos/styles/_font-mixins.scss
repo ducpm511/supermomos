@@ -1,0 +1,20 @@
+@mixin fontInter($size: unset, $weight: unset, $line-height: unset) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  font-family: "Inter";
+}
+
+@mixin fontNeueHaasDisplayBold($size: unset, $weight: unset, $line-height: unset) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  font-family: "NeueHaasDisplayBold";
+}
+
+@mixin fontNeueHaasDisplayLight($size: unset, $weight: unset, $line-height: unset) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  font-family: "NeueHaasDisplayLight";
+}

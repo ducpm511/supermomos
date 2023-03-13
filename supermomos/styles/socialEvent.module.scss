@@ -1,0 +1,262 @@
+@import "./font-mixins";
+.background {
+    background: linear-gradient(138.11deg, #fef452 0%, #942f70 121.92%);
+}
+.pageContainer {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.logo {
+    width: 20%;
+    img {
+        width: 100%;
+    }
+}
+.navMenu {
+    width: 60%;
+    justify-content: flex-end;
+    .nav {
+        a {
+            @include fontInter($size: 16px, $weight: 500, $line-height: 24px);
+            color: #333333;
+        }
+    }
+}
+
+.menuLink {
+    @include fontInter($size: 16px, $weight: 500, $line-height: 24px);
+    color: #333333 !important;
+}
+
+.titleInput {
+    input {
+        background: #942f70;
+        border: none;
+        width: 320px;
+        height: 70px;
+        padding: 20px;
+        @include fontNeueHaasDisplayBold($size: 48px, $weight: 700, $line-height: 60px);
+        color: #ffffff;
+    }
+    input::placeholder {
+        color: #ffffff;
+    }
+}
+.dateTimeInput {
+    justify-content: center;
+    img {
+        width: 34px;
+        height: 34px;
+        margin-right: 10px;
+    }
+
+    input {
+        background: #ffffff;
+        border: none;
+        width: 180px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 8px;
+        margin-right: 20px;
+        @include fontNeueHaasDisplayBold($size: 28px, $weight: 600, $line-height: 40px);
+        color: #000000;
+    }
+    input::placeholder {
+        color: #000000;
+    }
+}
+.venueInput {
+    align-items: center;
+    img {
+        width: 14px;
+        height: 17px;
+        margin-right: 10px;
+    }
+    input {
+        background: #ffffff;
+        border: none;
+        width: 454px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 4px;
+        margin-right: 20px;
+        @include fontNeueHaasDisplayBold($size: 16px, $weight: 600, $line-height: 40px);
+        color: #000000;
+    }
+    input::placeholder {
+        color: #000000;
+    }
+}
+
+.capacityAndCostInput {
+    align-items: center;
+    img {
+        width: 17px;
+        height: 14px;
+        margin-right: 10px;
+    }
+
+    input {
+        background: #ffffff;
+        border: none;
+        width: 155px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 4px;
+        margin-right: 20px;
+        @include fontNeueHaasDisplayBold($size: 16px, $weight: 600, $line-height: 40px);
+        color: #000000;
+    }
+    input::placeholder {
+        color: #000000;
+    }
+}
+
+.imagePicker {
+    width: 739px;
+    height: 445px;
+    background: rgba(242, 242, 242, 0.1);
+    border: 1px dashed #f2f2f2;
+    border-radius: 0px 64px;
+    display: grid;
+    align-items: center;
+}
+.imagePickerLabel {
+    justify-content: center;
+    img {
+        width: 24px;
+        margin-right: 10px;
+    }
+    span {
+        @include fontInter($size: 20px, $weight: 600, $line-height: 24px);
+        color: #14597a;
+    }
+}
+.descriptionTextArea {
+    padding: 12px 14px;
+    width: 642px;
+    height: 207px;
+    background: #ffffff;
+    /* Gray/300 */
+
+    border: 1px solid #d0d5dd;
+    /* Shadow/xs */
+
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    color: #000000;
+}
+.settings {
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    padding: 32px;
+    gap: 20px;
+
+    width: 640px;
+    height: 414px;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.settingLabel {
+    // padding: 12px;
+    text-align: center;
+    width: 146px;
+    height: 60px;
+    background: #fef452;
+    span {
+        @include fontNeueHaasDisplayBold($size: 32px, $weight: 700, $line-height: 60px);
+        color: #942f70;
+    }
+}
+
+.filterPills {
+    @include fontInter($size: 12px, $weight: 500, $line-height: 22px);
+    color: #942f70;
+    padding: 3px 10px;
+    border-radius: 30px;
+    //   border: 1px solid #942F70;
+    margin-right: 8px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    background: #F9F5FF;
+    mix-blend-mode: multiply;
+    border-radius: 16px;
+}
+
+.removeFilter {
+    padding-left: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tagPills {
+    @include fontInter($size: 12px, $weight: 500, $line-height: 22px);
+    color: #344054;
+    padding: 3px 10px;
+    border-radius: 30px;
+    //   border: 1px solid #942F70;
+    margin-right: 8px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    background: #F2F4F7;
+    mix-blend-mode: multiply;
+    border-radius: 16px;
+}
+
+.descriptionSectionName{
+    @include fontInter($size: 14px, $weight: 500, $line-height: 20px);
+    color: #333333;
+}
+.checkboxLabel{
+    @include fontInter($size: 14px, $weight: 500, $line-height: 20px);
+    color: #344054;
+}
+
+.radioLabel{
+    @include fontInter($size: 14px, $weight: 400, $line-height: 20px);
+    color: #344054;
+}
+
+.settingSectionName{
+    @include fontInter($size: 16px, $weight: 500, $line-height: 24px);
+    color: #344054;
+}
+
+.settingSectionSubText{
+    @include fontInter($size: 16px, $weight: 300, $line-height: 24px);
+    color: #475467;
+}
+
+.createBtn{
+    width: 640px;
+    height: 48px;
+    background: #FEF452;
+    border: 1px solid #FEF452;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    @include fontInter($size: 16px, $weight: 500, $line-height: 24px);
+    color: #942F70;
+}
+
+.imageWrapper{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+.imageSelected{
+    border: 5px solid #942F70;
+}
+.btnClose{
+    background: #ffffff;
+    color: #000000;
+    border: none;
+}
+.btnSave{
+    background: #FEF452;
+    color: #942F70;
+    border: none;
+}
